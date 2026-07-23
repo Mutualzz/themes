@@ -1,0 +1,37 @@
+{
+  "name": "@mutualzz/themes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/**",
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm typecheck && bunchee",
+    "dev": "bunchee --watch",
+    "test": "pnpm build && node scripts/sereneHorizonParity.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mutualzz/ui-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@emotion/react": "11.14.0"
+  },
+  "devDependencies": {
+    "@emotion/react": "11.14.0",
+    "@types/node": "^25.9.1",
+    "bunchee": "^6.10.0"
+  }
+}
