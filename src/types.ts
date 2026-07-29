@@ -1,11 +1,11 @@
 export type ThemePlatform = "mobile" | "desktop";
 
-export type GradientStop = {
+export interface GradientStop {
   color: string;
   percent: number;
-};
+}
 
-export type ThemeSemanticColors = {
+export interface ThemeSemanticColors {
   primary: string;
   neutral: string;
   background?: string;
@@ -14,16 +14,16 @@ export type ThemeSemanticColors = {
   warning: string;
   success: string;
   info: string;
-};
+}
 
-export type ThemeTypographyColors = {
+export interface ThemeTypographyColors {
   primary: string;
   secondary: string;
   accent: string;
   muted: string;
-};
+}
 
-export type ThemeDefinition = {
+export interface ThemeDefinition {
   id: string;
   name: string;
   description: string;
@@ -49,4 +49,4 @@ export type ThemeDefinition = {
       }
     >
   >;
-};
+}

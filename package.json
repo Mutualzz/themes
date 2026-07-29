@@ -21,7 +21,8 @@
     "build": "pnpm typecheck && bunchee",
     "dev": "bunchee --watch",
     "test": "pnpm build && node scripts/sereneHorizonParity.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src"
   },
   "dependencies": {
     "@mutualzz/ui-core": "workspace:*"
@@ -30,8 +31,10 @@
     "@emotion/react": "11.14.0"
   },
   "devDependencies": {
+    "@mutualzz/eslint-config": "workspace:*",
     "@emotion/react": "11.14.0",
     "@types/node": "^25.9.1",
-    "bunchee": "^6.10.0"
+    "bunchee": "^6.10.0",
+    "eslint": "^10.8.0"
   }
 }
