@@ -7,7 +7,14 @@ export const noirElegyDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#A06DDF",
+    neutral: "#B3A3D6",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#B884F0"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const noirElegyDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#A06DDF",
-        neutral: "#B3A3D6",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#B884F0"
-      }
-    },
     mobile: {
       colors: {
         primary: "#B884F0",

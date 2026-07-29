@@ -7,7 +7,14 @@ export const arcaneMidnightDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#A06DDF",
+    neutral: "#B3A3D6",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#6C8CFF"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const arcaneMidnightDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#A06DDF",
-        neutral: "#B3A3D6",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#6C8CFF"
-      }
-    },
     mobile: {
       colors: {
         primary: "#B884F0",

@@ -7,7 +7,14 @@ export const abyssalNocturneDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#2491c5",
+    neutral: "#8CA3B7",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#4A9DFF"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const abyssalNocturneDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#2491c5",
-        neutral: "#8CA3B7",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#4A9DFF"
-      }
-    },
     mobile: {
       colors: {
         primary: "#2EA8D8",

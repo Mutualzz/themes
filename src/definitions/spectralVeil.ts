@@ -7,7 +7,14 @@ export const spectralVeilDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#5A8FE6",
+    neutral: "#8CA3B7",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#5CB8E6"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const spectralVeilDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#5A8FE6",
-        neutral: "#8CA3B7",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#5CB8E6"
-      }
-    },
     mobile: {
       colors: {
         primary: "#6E9EF0",

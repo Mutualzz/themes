@@ -7,7 +7,14 @@ export const phantomMistDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#3CA9C8",
+    neutral: "#8CA3B7",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#5CB8E6"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const phantomMistDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#3CA9C8",
-        neutral: "#8CA3B7",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#5CB8E6"
-      }
-    },
     mobile: {
       colors: {
         primary: "#4BB7D9",

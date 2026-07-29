@@ -7,7 +7,14 @@ export const steelShadowDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#7C8B9C",
+    neutral: "#A0A0AA",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#7CA7E6"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const steelShadowDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#7C8B9C",
-        neutral: "#A0A0AA",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#7CA7E6"
-      }
-    },
     mobile: {
       colors: {
         primary: "#98A0D6",

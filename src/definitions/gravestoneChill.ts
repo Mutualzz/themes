@@ -7,7 +7,14 @@ export const gravestoneChillDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#AEB6CF",
+    neutral: "#8C9BAA",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#7CA7E6"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const gravestoneChillDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#AEB6CF",
-        neutral: "#8C9BAA",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#7CA7E6"
-      }
-    },
     mobile: {
       colors: {
         primary: "#B7B7D8",

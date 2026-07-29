@@ -7,7 +7,14 @@ export const vintageSorrowDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#F48CA7",
+    neutral: "#CDAFB9",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#FF95AB"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const vintageSorrowDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#F48CA7",
-        neutral: "#CDAFB9",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#FF95AB"
-      }
-    },
     mobile: {
       colors: {
         primary: "#FF95AB",

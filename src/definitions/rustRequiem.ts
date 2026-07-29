@@ -7,7 +7,14 @@ export const rustRequiemDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#FF9B5A",
+    neutral: "#B8A47A",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#FFB37A"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const rustRequiemDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#FF9B5A",
-        neutral: "#B8A47A",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#FFB37A"
-      }
-    },
     mobile: {
       colors: {
         primary: "#FFB37A",

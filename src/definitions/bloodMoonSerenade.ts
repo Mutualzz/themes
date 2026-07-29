@@ -7,7 +7,14 @@ export const bloodMoonSerenadeDefinition: ThemeDefinition = {
   adaptive: false,
   type: "dark",
   style: "gradient",
-  colors: {},
+  colors: {
+    primary: "#F45A6A",
+    neutral: "#B89CA9",
+    danger: "#FF5A6B",
+    warning: "#F2C572",
+    success: "#4DBE9A",
+    info: "#F47B94"
+  },
   typography: {
     colors: {
       primary: "#F3F6FA",
@@ -17,16 +24,6 @@ export const bloodMoonSerenadeDefinition: ThemeDefinition = {
     }
   },
   platforms: {
-    desktop: {
-      colors: {
-        primary: "#F45A6A",
-        neutral: "#B89CA9",
-        danger: "#FF5A6B",
-        warning: "#F2C572",
-        success: "#4DBE9A",
-        info: "#F47B94"
-      }
-    },
     mobile: {
       colors: {
         primary: "#FF6F84",
