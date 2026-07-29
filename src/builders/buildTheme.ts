@@ -13,7 +13,7 @@ function resolvePlatformColors(
 ) {
   return {
     ...definition.colors,
-    ...definition.platforms[platform]?.colors,
+    ...definition.platforms?.[platform]?.colors,
   };
 }
 
@@ -24,8 +24,20 @@ function resolvePlatformTypography(
   return {
     colors: {
       ...definition.typography.colors,
-      ...definition.platforms[platform]?.typography?.colors,
+      ...definition.platforms?.[platform]?.typography?.colors,
     },
+  };
+}
+
+function resolvePlatformGradients(
+  definition: ThemeDefinition,
+  platform: ThemePlatform,
+) {
+  if (!definition.gradients) return undefined;
+  const platformGradients = definition.platforms?.[platform]?.gradients;
+  return {
+    background: platformGradients?.background ?? definition.gradients.background,
+    surface: platformGradients?.surface ?? definition.gradients.surface,
   };
 }
 
@@ -36,12 +48,13 @@ export function buildTheme(
   const base = definition.type === "dark" ? baseDarkTheme : baseLightTheme;
   const colors = resolvePlatformColors(definition, platform);
   const typography = resolvePlatformTypography(definition, platform);
+  const gradients = resolvePlatformGradients(definition, platform);
 
   const background: ColorLike =
-    definition.style === "gradient" && definition.gradients
+    definition.style === "gradient" && gradients
       ? buildGradientBackground(
           [
-            ...definition.gradients.background,
+            ...gradients.background,
             { color: colors.primary ?? String(base.colors.primary), percent: 100 },
           ],
           platform,
@@ -49,10 +62,10 @@ export function buildTheme(
       : ((colors.background ?? base.colors.background) as ColorLike);
 
   const surface: ColorLike =
-    definition.style === "gradient" && definition.gradients
+    definition.style === "gradient" && gradients
       ? buildGradientBackground(
           [
-            ...definition.gradients.surface,
+            ...gradients.surface,
             { color: colors.primary ?? String(base.colors.primary), percent: 100 },
           ],
           platform,

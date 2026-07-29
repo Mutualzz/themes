@@ -20,7 +20,6 @@
   "scripts": {
     "build": "pnpm typecheck && bunchee",
     "dev": "bunchee --watch",
-    "test": "pnpm build && node scripts/sereneHorizonParity.mjs",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src"
   },

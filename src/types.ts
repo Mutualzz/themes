@@ -38,11 +38,15 @@ export interface ThemeDefinition {
   typography: {
     colors: ThemeTypographyColors;
   };
-  platforms: Partial<
+  platforms?: Partial<
     Record<
       ThemePlatform,
       {
         colors?: Partial<ThemeSemanticColors>;
+        gradients?: {
+          background?: GradientStop[];
+          surface?: GradientStop[];
+        };
         typography?: {
           colors?: Partial<ThemeTypographyColors>;
         };
